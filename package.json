@@ -1,0 +1,23 @@
+{
+  "name": "react-css-spinkit",
+  "version": "1.0.0",
+  "description": "CSS-only spinners for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpawnAtis/react-css-spinkit.git"
+  },
+  "keywords": [
+    "react",
+    "react-css-spinkit"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpawnAtis/react-css-spinkit/issues"
+  },
+  "homepage": "https://github.com/SpawnAtis/react-css-spinkit#readme"
+}
