@@ -1,6 +1,7 @@
-const getName = (name) => {
-  return name;
-};
+const getName = name => {
+  return name
+}
 
-getName('Vlad');
+getName('Vlad')
 
+export default getName
