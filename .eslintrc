@@ -1,4 +1,4 @@
 {
-  "extends": "kentcdodds",
+  "extends": ["kentcdodds", "kentcdodds/react", "kentcdodds/jsx-a11y"],
   "rules": {}
 }
