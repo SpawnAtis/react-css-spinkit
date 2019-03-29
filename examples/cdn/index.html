@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CDN Example</title>
+</head>
+<body>
+  <main></main>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="./node_modules/react-css-spinkit/dist/bundle.umd.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+  <script>
+    const container = document.getElementsByTagName('main')[0];
+    container.style.backgroundColor = '#FFB969'
+    const components = Object.keys(window.ReactCssSpinkit).map((Component) => (React.createElement(window.ReactCssSpinkit[Component])));
+    ReactDOM.render(React.createElement(React.Fragment, null, ...components), document.getElementsByTagName('main')[0]);
+  </script>
+</body>
+</html>
