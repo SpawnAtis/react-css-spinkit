@@ -16,5 +16,5 @@ fs.readdirSync(lib).forEach(function(mod) {
   const cmd = /^win/.test(process.platform) ? 'npm.cmd' : 'npm'
 
   // install folder
-  cp.spawn('yarn', ['i'], {env: process.env, cwd: modPath, stdio: 'inherit'})
+  cp.spawn(cmd, ['i'], {env: process.env, cwd: modPath, stdio: 'inherit'})
 })
