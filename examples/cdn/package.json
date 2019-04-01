@@ -7,9 +7,9 @@
     "serve": "serve"
   },
   "dependencies": {
-    "react-css-spinkit": "../.."
+    "react-css-spinners": "file:../.."
   },
   "devDependencies": {
-    "serve": "^10.1.2"
+    "serve": "latest"
   }
 }
