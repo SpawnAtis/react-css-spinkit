@@ -9,7 +9,7 @@
   "dependencies": {
     "express": "latest",
     "react": "latest",
-    "react-css-spinners": "file:../..",
+    "react-css-spinkit": "file:../..",
     "react-dom": "latest"
   }
 }
