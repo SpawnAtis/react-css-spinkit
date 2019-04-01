@@ -12,9 +12,9 @@ fs.readdirSync(lib).forEach(function(mod) {
   // ensure path has package.json
   if (!fs.existsSync(join(modPath, 'package.json'))) return
 
-  // Determine OS and set command accordingly
-  const cmd = /^win/.test(process.platform) ? 'npm.cmd' : 'npm'
+  // // Determine OS and set command accordingly
+  // const cmd = /^win/.test(process.platform) ? 'npm.cmd' : 'npm'
 
   // install folder
-  cp.spawn(cmd, ['i'], {env: process.env, cwd: modPath, stdio: 'inherit'})
+  cp.spawn('yarn', [], {env: process.env, cwd: modPath, stdio: 'inherit'})
 })

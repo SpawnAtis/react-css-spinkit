@@ -6,12 +6,12 @@ node_js:
   - node
 
 install:
-  - npm run preinstall
-  - npm ci
+  - yarn preinstall
+  - yarn
 
 script:
-  - npm run lint:es
-  - npm test:coveralls
+  - yarn lint:es
+  - yarn test:coveralls
 
 notifications:
   email: false
