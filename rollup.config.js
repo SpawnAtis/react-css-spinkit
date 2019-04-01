@@ -7,29 +7,27 @@ const dist = 'dist'
 const bundle = 'bundle'
 const production = !process.env.ROLLUP_WATCH
 
-const outputs = [
-  {
-    file: `${dist}/${bundle}.cjs.js`,
-    format: 'cjs',
-  },
-  {
-    file: `${dist}/${bundle}.esm.js`,
-    format: 'esm',
-  },
-  {
-    name: 'ReactCssSpinkit',
-    file: `${dist}/${bundle}.umd.js`,
-    globals: {
-      react: 'React',
-      'react-dom': 'ReactDom',
-    },
-    format: 'umd',
-  },
-]
-
-const common = {
+export default {
   input: 'src/index.js',
   external: ['react'],
+  output: [
+    {
+      file: `${dist}/${bundle}.cjs.js`,
+      format: 'cjs',
+    },
+    {
+      file: `${dist}/${bundle}.esm.js`,
+      format: 'esm',
+    },
+    {
+      name: 'ReactCssSpinkit',
+      file: `${dist}/${bundle}.umd.js`,
+      globals: {
+        react: 'React',
+      },
+      format: 'umd',
+    },
+  ],
   plugins: [
     resolve(),
     babel({
@@ -41,8 +39,3 @@ const common = {
     production && terser(),
   ],
 }
-
-export default outputs.map(output => ({
-  ...common,
-  output,
-}))
