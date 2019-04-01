@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Facebook component Should render Facebook without problems 1`] = `
+<DocumentFragment>
+  <style
+    type="text/css"
+  >
+    [object Object]
+  </style>
+  <div
+    class="lds-facebook"
+  >
+    <div />
+    <div />
+    <div />
+  </div>
+</DocumentFragment>
+`;

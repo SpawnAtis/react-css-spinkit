@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Circle component Should render Circle without problems 1`] = `
+<DocumentFragment>
+  <style
+    type="text/css"
+  >
+    [object Object]
+  </style>
+  <div
+    class="lds-circle"
+  >
+    <div />
+  </div>
+</DocumentFragment>
+`;

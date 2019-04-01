@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ripple component Should render Ripple without problems 1`] = `
+<DocumentFragment>
+  <style>
+    [object Object]
+  </style>
+  <div
+    class="lds-ripple"
+  >
+    <div />
+    <div />
+  </div>
+</DocumentFragment>
+`;

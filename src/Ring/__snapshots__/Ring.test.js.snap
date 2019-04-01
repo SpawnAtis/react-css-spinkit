@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ring component Should render Ring without problems 1`] = `
+<DocumentFragment>
+  <style>
+    [object Object]
+  </style>
+  <div
+    class="lds-ring"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+</DocumentFragment>
+`;
